@@ -1,0 +1,218 @@
+{
+  "whatsapp": {
+    "per_edge_stats": {
+      "mean": -0.558,
+      "std": 3.565,
+      "threshold_90th": 3.029,
+      "elevated_bar_70th": -1.808,
+      "attacker_ceiling": -1.836
+    },
+    "sweep": {
+      "1": {
+        "attack_z": -0.368,
+        "attack_n_elevated": 0,
+        "z_flags": false,
+        "elevation_flags": false,
+        "combined_flagged": false,
+        "genuine_fp_rate": 0.025
+      },
+      "3": {
+        "attack_z": -0.619,
+        "attack_n_elevated": 0,
+        "z_flags": false,
+        "elevation_flags": false,
+        "combined_flagged": false,
+        "genuine_fp_rate": 0.0402
+      },
+      "5": {
+        "attack_z": -0.814,
+        "attack_n_elevated": 0,
+        "z_flags": false,
+        "elevation_flags": false,
+        "combined_flagged": false,
+        "genuine_fp_rate": 0.038
+      },
+      "7": {
+        "attack_z": -0.963,
+        "attack_n_elevated": 0,
+        "z_flags": false,
+        "elevation_flags": false,
+        "combined_flagged": false,
+        "genuine_fp_rate": 0.0402
+      },
+      "9": {
+        "attack_z": -1.096,
+        "attack_n_elevated": 0,
+        "z_flags": false,
+        "elevation_flags": false,
+        "combined_flagged": false,
+        "genuine_fp_rate": 0.0358
+      },
+      "11": {
+        "attack_z": -1.191,
+        "attack_n_elevated": 0,
+        "z_flags": false,
+        "elevation_flags": false,
+        "combined_flagged": false,
+        "genuine_fp_rate": 0.0326
+      },
+      "15": {
+        "attack_z": -1.394,
+        "attack_n_elevated": 0,
+        "z_flags": false,
+        "elevation_flags": false,
+        "combined_flagged": false,
+        "genuine_fp_rate": 0.0244
+      },
+      "20": {
+        "attack_z": -1.587,
+        "attack_n_elevated": 0,
+        "z_flags": false,
+        "elevation_flags": false,
+        "combined_flagged": false,
+        "genuine_fp_rate": 0.0522
+      },
+      "30": {
+        "attack_z": -1.976,
+        "attack_n_elevated": 0,
+        "z_flags": false,
+        "elevation_flags": false,
+        "combined_flagged": false,
+        "genuine_fp_rate": 0.0448
+      },
+      "50": {
+        "attack_z": -2.553,
+        "attack_n_elevated": 0,
+        "z_flags": false,
+        "elevation_flags": false,
+        "combined_flagged": false,
+        "genuine_fp_rate": 0.0568
+      },
+      "75": {
+        "attack_z": -3.169,
+        "attack_n_elevated": 0,
+        "z_flags": true,
+        "elevation_flags": false,
+        "combined_flagged": true,
+        "genuine_fp_rate": 0.0488
+      },
+      "100": {
+        "attack_z": -3.605,
+        "attack_n_elevated": 0,
+        "z_flags": true,
+        "elevation_flags": false,
+        "combined_flagged": true,
+        "genuine_fp_rate": 0.0396
+      }
+    },
+    "analytic_crossover_hops": null
+  },
+  "youtube": {
+    "per_edge_stats": {
+      "mean": -3.557,
+      "std": 3.3,
+      "threshold_90th": -2.284,
+      "elevated_bar_70th": -3.951,
+      "attacker_ceiling": -4.001
+    },
+    "sweep": {
+      "1": {
+        "attack_z": -0.133,
+        "attack_n_elevated": 0,
+        "z_flags": false,
+        "elevation_flags": false,
+        "combined_flagged": false,
+        "genuine_fp_rate": 0.0126
+      },
+      "3": {
+        "attack_z": -0.245,
+        "attack_n_elevated": 0,
+        "z_flags": false,
+        "elevation_flags": false,
+        "combined_flagged": false,
+        "genuine_fp_rate": 0.0626
+      },
+      "5": {
+        "attack_z": -0.308,
+        "attack_n_elevated": 0,
+        "z_flags": false,
+        "elevation_flags": false,
+        "combined_flagged": false,
+        "genuine_fp_rate": 0.0822
+      },
+      "7": {
+        "attack_z": -0.355,
+        "attack_n_elevated": 0,
+        "z_flags": false,
+        "elevation_flags": false,
+        "combined_flagged": false,
+        "genuine_fp_rate": 0.0554
+      },
+      "9": {
+        "attack_z": -0.412,
+        "attack_n_elevated": 0,
+        "z_flags": false,
+        "elevation_flags": false,
+        "combined_flagged": false,
+        "genuine_fp_rate": 0.0428
+      },
+      "11": {
+        "attack_z": -0.439,
+        "attack_n_elevated": 0,
+        "z_flags": false,
+        "elevation_flags": false,
+        "combined_flagged": false,
+        "genuine_fp_rate": 0.0292
+      },
+      "15": {
+        "attack_z": -0.531,
+        "attack_n_elevated": 0,
+        "z_flags": false,
+        "elevation_flags": false,
+        "combined_flagged": false,
+        "genuine_fp_rate": 0.0266
+      },
+      "20": {
+        "attack_z": -0.582,
+        "attack_n_elevated": 0,
+        "z_flags": false,
+        "elevation_flags": false,
+        "combined_flagged": false,
+        "genuine_fp_rate": 0.0624
+      },
+      "30": {
+        "attack_z": -0.743,
+        "attack_n_elevated": 0,
+        "z_flags": false,
+        "elevation_flags": false,
+        "combined_flagged": false,
+        "genuine_fp_rate": 0.0484
+      },
+      "50": {
+        "attack_z": -0.94,
+        "attack_n_elevated": 0,
+        "z_flags": false,
+        "elevation_flags": false,
+        "combined_flagged": false,
+        "genuine_fp_rate": 0.0584
+      },
+      "75": {
+        "attack_z": -1.14,
+        "attack_n_elevated": 0,
+        "z_flags": false,
+        "elevation_flags": false,
+        "combined_flagged": false,
+        "genuine_fp_rate": 0.0494
+      },
+      "100": {
+        "attack_z": -1.374,
+        "attack_n_elevated": 0,
+        "z_flags": false,
+        "elevation_flags": false,
+        "combined_flagged": false,
+        "genuine_fp_rate": 0.0416
+      }
+    },
+    "analytic_crossover_hops": null
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "whatsapp": {
+    "n": 15,
+    "mean_diff": 0.0516,
+    "wilcoxon_stat": 55.0,
+    "wilcoxon_pvalue": 0.7758,
+    "exact_permutation_pvalue": 0.3861
+  },
+  "youtube": {
+    "n": 15,
+    "mean_diff": 0.1693,
+    "wilcoxon_stat": 56.0,
+    "wilcoxon_pvalue": 0.8201,
+    "exact_permutation_pvalue": 0.1386
+  }
+}

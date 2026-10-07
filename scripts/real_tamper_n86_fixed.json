@@ -1,0 +1,94 @@
+{
+  "dfd_naive_tier": {
+    "whatsapp": {
+      "snapshot_baseline": {
+        "ci_95_low": 0.893,
+        "ci_95_high": 0.976,
+        "bootstrap_mean": 0.94
+      },
+      "drift_only": {
+        "ci_95_low": 0.936,
+        "ci_95_high": 0.991,
+        "bootstrap_mean": 0.968
+      },
+      "coevasion_only": {
+        "ci_95_low": 0.654,
+        "ci_95_high": 0.844,
+        "bootstrap_mean": 0.75
+      },
+      "full_system": {
+        "ci_95_low": 0.88,
+        "ci_95_high": 0.989,
+        "bootstrap_mean": 0.942
+      }
+    },
+    "youtube": {
+      "snapshot_baseline": {
+        "ci_95_low": 0.945,
+        "ci_95_high": 0.992,
+        "bootstrap_mean": 0.973
+      },
+      "drift_only": {
+        "ci_95_low": 0.991,
+        "ci_95_high": 1.0,
+        "bootstrap_mean": 0.997
+      },
+      "coevasion_only": {
+        "ci_95_low": 0.655,
+        "ci_95_high": 0.844,
+        "bootstrap_mean": 0.75
+      },
+      "full_system": {
+        "ci_95_low": 0.991,
+        "ci_95_high": 1.0,
+        "bootstrap_mean": 0.997
+      }
+    }
+  },
+  "celebdf_heuristic_tier": {
+    "whatsapp": {
+      "snapshot_baseline": {
+        "ci_95_low": 0.917,
+        "ci_95_high": 0.983,
+        "bootstrap_mean": 0.954
+      },
+      "drift_only": {
+        "ci_95_low": 1.0,
+        "ci_95_high": 1.0,
+        "bootstrap_mean": 1.0
+      },
+      "coevasion_only": {
+        "ci_95_low": 0.456,
+        "ci_95_high": 0.564,
+        "bootstrap_mean": 0.505
+      },
+      "full_system": {
+        "ci_95_low": 1.0,
+        "ci_95_high": 1.0,
+        "bootstrap_mean": 1.0
+      }
+    },
+    "youtube": {
+      "snapshot_baseline": {
+        "ci_95_low": 0.949,
+        "ci_95_high": 0.991,
+        "bootstrap_mean": 0.974
+      },
+      "drift_only": {
+        "ci_95_low": 1.0,
+        "ci_95_high": 1.0,
+        "bootstrap_mean": 1.0
+      },
+      "coevasion_only": {
+        "ci_95_low": 0.456,
+        "ci_95_high": 0.56,
+        "bootstrap_mean": 0.504
+      },
+      "full_system": {
+        "ci_95_low": 1.0,
+        "ci_95_high": 1.0,
+        "bootstrap_mean": 1.0
+      }
+    }
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "ml_baseline_comparison": {
+    "whatsapp": {
+      "naive": {
+        "isolation_forest": {
+          "auc": 0.9527131782945736,
+          "f1": 0.8529411764705882
+        },
+        "one_class_svm": {
+          "auc": 0.9391472868217055,
+          "f1": 0.8695652173913043
+        }
+      },
+      "heuristic": {
+        "isolation_forest": {
+          "auc": 0.7697674418604651,
+          "f1": 0.0
+        },
+        "one_class_svm": {
+          "auc": 0.8724806201550387,
+          "f1": 0.0
+        }
+      },
+      "adaptive": {
+        "isolation_forest": {
+          "auc": 0.7325581395348837,
+          "f1": 0.0
+        },
+        "one_class_svm": {
+          "auc": 0.872093023255814,
+          "f1": 0.0
+        }
+      }
+    },
+    "youtube": {
+      "naive": {
+        "isolation_forest": {
+          "auc": 0.9941860465116279,
+          "f1": 0.8695652173913043
+        },
+        "one_class_svm": {
+          "auc": 1.0,
+          "f1": 0.8695652173913043
+        }
+      },
+      "heuristic": {
+        "isolation_forest": {
+          "auc": 0.8333333333333334,
+          "f1": 0.3404255319148936
+        },
+        "one_class_svm": {
+          "auc": 0.848062015503876,
+          "f1": 0.30434782608695654
+        }
+      },
+      "adaptive": {
+        "isolation_forest": {
+          "auc": 0.6248062015503876,
+          "f1": 0.0
+        },
+        "one_class_svm": {
+          "auc": 0.8837209302325582,
+          "f1": 0.0
+        }
+      }
+    }
+  },
+  "calibration": {
+    "whatsapp": {
+      "snapshot_baseline_ece": 0.26870314433958264,
+      "full_system_ece": 0.20302551602487878
+    },
+    "youtube": {
+      "snapshot_baseline_ece": 0.2756295041685918,
+      "full_system_ece": 0.20237911421939297
+    }
+  },
+  "threshold_sensitivity": {
+    "whatsapp": {
+      "80.0": 0.939922480620155,
+      "85.0": 0.9290697674418604,
+      "90.0": 0.9335271317829458,
+      "95.0": 0.907170542635659,
+      "99.0": 0.8984496124031008
+    },
+    "youtube": {
+      "80.0": 0.9265503875968992,
+      "85.0": 0.9329457364341085,
+      "90.0": 0.9387596899224805,
+      "95.0": 0.9420542635658914,
+      "99.0": 0.898062015503876
+    }
+  },
+  "case_study": {
+    "device": "D01_Samsung_GalaxyS3Mini",
+    "scene": "flat",
+    "native_features": [
+      1.1207890510559082,
+      0.29831549525260925,
+      749.0,
+      91.0
+    ],
+    "whatsapp_features": [
+      0.8477068543434143,
+      0.3852465748786926,
+      749.0,
+      91.0
+    ],
+    "delta": [
+      -0.2730821967124939,
+      0.08693107962608337,
+      0.0,
+      0.0
+    ],
+    "drift_score": -1.9943285190644553,
+    "drift_threshold": 3.029020059491759,
+    "coevasion_score": 10.922448190587227,
+    "coevasion_tau_low": 0.6481602743582938,
+    "coevasion_tau_high": 3.6648934927136736,
+    "coevasion_flag": "mismatch",
+    "verdict_flagged": true,
+    "verdict_reasons": [
+      "coevasion_mismatch"
+    ]
+  },
+  "cross_transform_generalization": {
+    "matched_fit_on_youtube_auc": 0.9081395348837209,
+    "cross_fit_whatsapp_scoring_youtube_auc": 0.9647286821705428
+  }
+}

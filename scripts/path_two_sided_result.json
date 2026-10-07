@@ -1,0 +1,486 @@
+{
+  "whatsapp": {
+    "per_edge_stats": {
+      "mean": -0.558,
+      "std": 3.565,
+      "elevated_bar_70th": -1.808,
+      "attacker_ceiling": -1.836
+    },
+    "adaptive_attacker_sweep": {
+      "1": {
+        "n_elevated": 0,
+        "z": -0.368,
+        "z_flags": false,
+        "one_sided_elevation_flags": false,
+        "two_sided_elevation_flags": false,
+        "old_combined_flagged": false,
+        "new_combined_flagged": false
+      },
+      "3": {
+        "n_elevated": 0,
+        "z": -0.619,
+        "z_flags": false,
+        "one_sided_elevation_flags": false,
+        "two_sided_elevation_flags": false,
+        "old_combined_flagged": false,
+        "new_combined_flagged": false
+      },
+      "5": {
+        "n_elevated": 0,
+        "z": -0.814,
+        "z_flags": false,
+        "one_sided_elevation_flags": false,
+        "two_sided_elevation_flags": false,
+        "old_combined_flagged": false,
+        "new_combined_flagged": false
+      },
+      "7": {
+        "n_elevated": 0,
+        "z": -0.963,
+        "z_flags": false,
+        "one_sided_elevation_flags": false,
+        "two_sided_elevation_flags": false,
+        "old_combined_flagged": false,
+        "new_combined_flagged": false
+      },
+      "9": {
+        "n_elevated": 0,
+        "z": -1.096,
+        "z_flags": false,
+        "one_sided_elevation_flags": false,
+        "two_sided_elevation_flags": false,
+        "old_combined_flagged": false,
+        "new_combined_flagged": false
+      },
+      "11": {
+        "n_elevated": 0,
+        "z": -1.191,
+        "z_flags": false,
+        "one_sided_elevation_flags": false,
+        "two_sided_elevation_flags": true,
+        "old_combined_flagged": false,
+        "new_combined_flagged": true
+      },
+      "15": {
+        "n_elevated": 0,
+        "z": -1.394,
+        "z_flags": false,
+        "one_sided_elevation_flags": false,
+        "two_sided_elevation_flags": true,
+        "old_combined_flagged": false,
+        "new_combined_flagged": true
+      },
+      "20": {
+        "n_elevated": 0,
+        "z": -1.587,
+        "z_flags": false,
+        "one_sided_elevation_flags": false,
+        "two_sided_elevation_flags": true,
+        "old_combined_flagged": false,
+        "new_combined_flagged": true
+      },
+      "30": {
+        "n_elevated": 0,
+        "z": -1.976,
+        "z_flags": false,
+        "one_sided_elevation_flags": false,
+        "two_sided_elevation_flags": true,
+        "old_combined_flagged": false,
+        "new_combined_flagged": true
+      },
+      "50": {
+        "n_elevated": 0,
+        "z": -2.553,
+        "z_flags": false,
+        "one_sided_elevation_flags": false,
+        "two_sided_elevation_flags": true,
+        "old_combined_flagged": false,
+        "new_combined_flagged": true
+      },
+      "75": {
+        "n_elevated": 0,
+        "z": -3.169,
+        "z_flags": true,
+        "one_sided_elevation_flags": false,
+        "two_sided_elevation_flags": true,
+        "old_combined_flagged": true,
+        "new_combined_flagged": true
+      },
+      "100": {
+        "n_elevated": 0,
+        "z": -3.605,
+        "z_flags": true,
+        "one_sided_elevation_flags": false,
+        "two_sided_elevation_flags": true,
+        "old_combined_flagged": true,
+        "new_combined_flagged": true
+      }
+    },
+    "creeping_attacker_sweep": {
+      "1": {
+        "n_elevated": 1,
+        "z": 0.967,
+        "one_sided_elevation_flags": false,
+        "two_sided_elevation_flags": false
+      },
+      "3": {
+        "n_elevated": 3,
+        "z": 1.779,
+        "one_sided_elevation_flags": true,
+        "two_sided_elevation_flags": false
+      },
+      "5": {
+        "n_elevated": 5,
+        "z": 2.309,
+        "one_sided_elevation_flags": true,
+        "two_sided_elevation_flags": true
+      },
+      "7": {
+        "n_elevated": 7,
+        "z": 2.667,
+        "one_sided_elevation_flags": true,
+        "two_sided_elevation_flags": true
+      },
+      "9": {
+        "n_elevated": 9,
+        "z": 3.105,
+        "one_sided_elevation_flags": true,
+        "two_sided_elevation_flags": true
+      },
+      "11": {
+        "n_elevated": 11,
+        "z": 3.37,
+        "one_sided_elevation_flags": true,
+        "two_sided_elevation_flags": true
+      },
+      "15": {
+        "n_elevated": 15,
+        "z": 3.946,
+        "one_sided_elevation_flags": true,
+        "two_sided_elevation_flags": true
+      },
+      "20": {
+        "n_elevated": 20,
+        "z": 4.521,
+        "one_sided_elevation_flags": true,
+        "two_sided_elevation_flags": true
+      },
+      "30": {
+        "n_elevated": 30,
+        "z": 5.509,
+        "one_sided_elevation_flags": true,
+        "two_sided_elevation_flags": true
+      },
+      "50": {
+        "n_elevated": 50,
+        "z": 7.12,
+        "one_sided_elevation_flags": true,
+        "two_sided_elevation_flags": true
+      },
+      "75": {
+        "n_elevated": 75,
+        "z": 8.843,
+        "one_sided_elevation_flags": true,
+        "two_sided_elevation_flags": true
+      },
+      "100": {
+        "n_elevated": 100,
+        "z": 10.129,
+        "one_sided_elevation_flags": true,
+        "two_sided_elevation_flags": true
+      }
+    },
+    "genuine_fp": {
+      "1": {
+        "one_sided_rate": 0.0,
+        "two_sided_rate": 0.0
+      },
+      "3": {
+        "one_sided_rate": 0.0274,
+        "two_sided_rate": 0.0
+      },
+      "5": {
+        "one_sided_rate": 0.0288,
+        "two_sided_rate": 0.0014
+      },
+      "7": {
+        "one_sided_rate": 0.031,
+        "two_sided_rate": 0.0032
+      },
+      "9": {
+        "one_sided_rate": 0.0302,
+        "two_sided_rate": 0.005
+      },
+      "11": {
+        "one_sided_rate": 0.0256,
+        "two_sided_rate": 0.0442
+      },
+      "15": {
+        "one_sided_rate": 0.0182,
+        "two_sided_rate": 0.022
+      },
+      "20": {
+        "one_sided_rate": 0.0482,
+        "two_sided_rate": 0.0266
+      },
+      "30": {
+        "one_sided_rate": 0.042,
+        "two_sided_rate": 0.0262
+      },
+      "50": {
+        "one_sided_rate": 0.0536,
+        "two_sided_rate": 0.0314
+      },
+      "75": {
+        "one_sided_rate": 0.047,
+        "two_sided_rate": 0.0444
+      },
+      "100": {
+        "one_sided_rate": 0.038,
+        "two_sided_rate": 0.0368
+      }
+    }
+  },
+  "youtube": {
+    "per_edge_stats": {
+      "mean": -3.557,
+      "std": 3.3,
+      "elevated_bar_70th": -3.951,
+      "attacker_ceiling": -4.001
+    },
+    "adaptive_attacker_sweep": {
+      "1": {
+        "n_elevated": 0,
+        "z": -0.133,
+        "z_flags": false,
+        "one_sided_elevation_flags": false,
+        "two_sided_elevation_flags": false,
+        "old_combined_flagged": false,
+        "new_combined_flagged": false
+      },
+      "3": {
+        "n_elevated": 0,
+        "z": -0.245,
+        "z_flags": false,
+        "one_sided_elevation_flags": false,
+        "two_sided_elevation_flags": false,
+        "old_combined_flagged": false,
+        "new_combined_flagged": false
+      },
+      "5": {
+        "n_elevated": 0,
+        "z": -0.308,
+        "z_flags": false,
+        "one_sided_elevation_flags": false,
+        "two_sided_elevation_flags": false,
+        "old_combined_flagged": false,
+        "new_combined_flagged": false
+      },
+      "7": {
+        "n_elevated": 0,
+        "z": -0.355,
+        "z_flags": false,
+        "one_sided_elevation_flags": false,
+        "two_sided_elevation_flags": false,
+        "old_combined_flagged": false,
+        "new_combined_flagged": false
+      },
+      "9": {
+        "n_elevated": 0,
+        "z": -0.412,
+        "z_flags": false,
+        "one_sided_elevation_flags": false,
+        "two_sided_elevation_flags": false,
+        "old_combined_flagged": false,
+        "new_combined_flagged": false
+      },
+      "11": {
+        "n_elevated": 0,
+        "z": -0.439,
+        "z_flags": false,
+        "one_sided_elevation_flags": false,
+        "two_sided_elevation_flags": true,
+        "old_combined_flagged": false,
+        "new_combined_flagged": true
+      },
+      "15": {
+        "n_elevated": 0,
+        "z": -0.531,
+        "z_flags": false,
+        "one_sided_elevation_flags": false,
+        "two_sided_elevation_flags": true,
+        "old_combined_flagged": false,
+        "new_combined_flagged": true
+      },
+      "20": {
+        "n_elevated": 0,
+        "z": -0.582,
+        "z_flags": false,
+        "one_sided_elevation_flags": false,
+        "two_sided_elevation_flags": true,
+        "old_combined_flagged": false,
+        "new_combined_flagged": true
+      },
+      "30": {
+        "n_elevated": 0,
+        "z": -0.743,
+        "z_flags": false,
+        "one_sided_elevation_flags": false,
+        "two_sided_elevation_flags": true,
+        "old_combined_flagged": false,
+        "new_combined_flagged": true
+      },
+      "50": {
+        "n_elevated": 0,
+        "z": -0.94,
+        "z_flags": false,
+        "one_sided_elevation_flags": false,
+        "two_sided_elevation_flags": true,
+        "old_combined_flagged": false,
+        "new_combined_flagged": true
+      },
+      "75": {
+        "n_elevated": 0,
+        "z": -1.14,
+        "z_flags": false,
+        "one_sided_elevation_flags": false,
+        "two_sided_elevation_flags": true,
+        "old_combined_flagged": false,
+        "new_combined_flagged": true
+      },
+      "100": {
+        "n_elevated": 0,
+        "z": -1.374,
+        "z_flags": false,
+        "one_sided_elevation_flags": false,
+        "two_sided_elevation_flags": true,
+        "old_combined_flagged": false,
+        "new_combined_flagged": true
+      }
+    },
+    "creeping_attacker_sweep": {
+      "1": {
+        "n_elevated": 1,
+        "z": 0.376,
+        "one_sided_elevation_flags": false,
+        "two_sided_elevation_flags": false
+      },
+      "3": {
+        "n_elevated": 3,
+        "z": 0.637,
+        "one_sided_elevation_flags": true,
+        "two_sided_elevation_flags": false
+      },
+      "5": {
+        "n_elevated": 5,
+        "z": 0.884,
+        "one_sided_elevation_flags": true,
+        "two_sided_elevation_flags": true
+      },
+      "7": {
+        "n_elevated": 7,
+        "z": 1.05,
+        "one_sided_elevation_flags": true,
+        "two_sided_elevation_flags": true
+      },
+      "9": {
+        "n_elevated": 9,
+        "z": 1.173,
+        "one_sided_elevation_flags": true,
+        "two_sided_elevation_flags": true
+      },
+      "11": {
+        "n_elevated": 11,
+        "z": 1.31,
+        "one_sided_elevation_flags": true,
+        "two_sided_elevation_flags": true
+      },
+      "15": {
+        "n_elevated": 15,
+        "z": 1.478,
+        "one_sided_elevation_flags": true,
+        "two_sided_elevation_flags": true
+      },
+      "20": {
+        "n_elevated": 20,
+        "z": 1.836,
+        "one_sided_elevation_flags": true,
+        "two_sided_elevation_flags": true
+      },
+      "30": {
+        "n_elevated": 30,
+        "z": 2.234,
+        "one_sided_elevation_flags": true,
+        "two_sided_elevation_flags": true
+      },
+      "50": {
+        "n_elevated": 50,
+        "z": 2.74,
+        "one_sided_elevation_flags": true,
+        "two_sided_elevation_flags": true
+      },
+      "75": {
+        "n_elevated": 75,
+        "z": 3.389,
+        "one_sided_elevation_flags": true,
+        "two_sided_elevation_flags": true
+      },
+      "100": {
+        "n_elevated": 100,
+        "z": 3.908,
+        "one_sided_elevation_flags": true,
+        "two_sided_elevation_flags": true
+      }
+    },
+    "genuine_fp": {
+      "1": {
+        "one_sided_rate": 0.0,
+        "two_sided_rate": 0.0
+      },
+      "3": {
+        "one_sided_rate": 0.0308,
+        "two_sided_rate": 0.0
+      },
+      "5": {
+        "one_sided_rate": 0.0292,
+        "two_sided_rate": 0.0024
+      },
+      "7": {
+        "one_sided_rate": 0.0298,
+        "two_sided_rate": 0.004
+      },
+      "9": {
+        "one_sided_rate": 0.0306,
+        "two_sided_rate": 0.005
+      },
+      "11": {
+        "one_sided_rate": 0.0198,
+        "two_sided_rate": 0.0394
+      },
+      "15": {
+        "one_sided_rate": 0.0148,
+        "two_sided_rate": 0.0194
+      },
+      "20": {
+        "one_sided_rate": 0.0518,
+        "two_sided_rate": 0.0248
+      },
+      "30": {
+        "one_sided_rate": 0.0374,
+        "two_sided_rate": 0.0218
+      },
+      "50": {
+        "one_sided_rate": 0.0522,
+        "two_sided_rate": 0.0312
+      },
+      "75": {
+        "one_sided_rate": 0.0422,
+        "two_sided_rate": 0.0442
+      },
+      "100": {
+        "one_sided_rate": 0.0378,
+        "two_sided_rate": 0.037
+      }
+    }
+  }
+}
