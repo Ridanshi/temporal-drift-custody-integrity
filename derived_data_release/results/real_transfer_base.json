@@ -1,0 +1,38 @@
+{
+ "snapshot_conflict": {
+  "vision_p90": -0.38,
+  "native": {
+   "n": 17,
+   "flagged": 0.59,
+   "median": -0.05
+  },
+  "ctrl": {
+   "n": 13,
+   "flagged": 0.38,
+   "median": -0.6
+  },
+  "copymove": {
+   "n": 15,
+   "flagged": 0.87,
+   "median": 1.22
+  }
+ },
+ "drift_only": {
+  "vision_p90": -2.32,
+  "native": {
+   "n": 17,
+   "flagged": 1.0,
+   "median": 1.39
+  },
+  "ctrl": {
+   "n": 13,
+   "flagged": 0.92,
+   "median": 1.17
+  },
+  "copymove": {
+   "n": 15,
+   "flagged": 1.0,
+   "median": 2.5
+  }
+ }
+}

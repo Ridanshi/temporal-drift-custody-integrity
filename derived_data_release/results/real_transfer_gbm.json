@@ -1,0 +1,38 @@
+{
+ "gbm_orig": {
+  "vision_p90": 0.011,
+  "native": {
+   "n": 17,
+   "flagged": 1.0,
+   "median": 0.992
+  },
+  "ctrl": {
+   "n": 13,
+   "flagged": 1.0,
+   "median": 0.979
+  },
+  "copymove": {
+   "n": 15,
+   "flagged": 1.0,
+   "median": 0.992
+  }
+ },
+ "gbm_ctrl": {
+  "vision_p90": 0.036,
+  "native": {
+   "n": 17,
+   "flagged": 1.0,
+   "median": 0.953
+  },
+  "ctrl": {
+   "n": 13,
+   "flagged": 1.0,
+   "median": 0.95
+  },
+  "copymove": {
+   "n": 15,
+   "flagged": 1.0,
+   "median": 0.997
+  }
+ }
+}

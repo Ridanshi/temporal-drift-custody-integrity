@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite it as below."
+title: "temporal-drift-custody-integrity"
+type: software
+version: "1.0.0"
+date-released: "2026-10-25"
+authors:
+  - family-names: "Agarwal"
+    given-names: "Ridanshi"
+    affiliation: "School of Computer Science and Engineering, Vellore Institute of Technology, Vellore, India"
+  - family-names: "M"
+    given-names: "Madiajagan"
+    affiliation: "School of Computer Science and Engineering, Vellore Institute of Technology, Vellore, India"
+repository-code: "https://github.com/Ridanshi/temporal-drift-custody-integrity"
+abstract: "Code and derived data for 'Temporal Drift-Anomaly & Co-Evasion Detection for Chain-of-Custody Integrity in Digital Evidence'."
+keywords: ["digital forensics", "chain of custody", "video authenticity", "anomaly detection"]

@@ -1,0 +1,46 @@
+{
+ "gbm_orig": {
+  "genuine|platform": [
+   0.968,
+   0.909,
+   0.995
+  ],
+  "genuine|naive": [
+   0.988,
+   0.958,
+   1.0
+  ],
+  "simctl|platform": [
+   0.896,
+   0.86,
+   0.928
+  ],
+  "simctl|naive": [
+   0.979,
+   0.956,
+   0.996
+  ]
+ },
+ "gbm_ctrl": {
+  "genuine|platform": [
+   0.953,
+   0.88,
+   0.991
+  ],
+  "genuine|naive": [
+   0.989,
+   0.955,
+   1.0
+  ],
+  "simctl|platform": [
+   0.955,
+   0.922,
+   0.977
+  ],
+  "simctl|naive": [
+   1.0,
+   1.0,
+   1.0
+  ]
+ }
+}

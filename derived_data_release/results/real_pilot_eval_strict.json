@@ -1,0 +1,89 @@
+{
+ "clips": [
+  "FV03",
+  "FV04",
+  "FV05",
+  "FV06",
+  "FV07",
+  "FV08",
+  "FV09",
+  "FV12",
+  "FV16",
+  "FV19",
+  "FV20"
+ ],
+ "results": {
+  "mahalanobis | all25": {
+   "auc": 0.802,
+   "ci": [
+    0.636,
+    0.95
+   ],
+   "clips_copymove_higher": "9/11",
+   "sign_test_p": 0.033
+  },
+  "logistic | all25": {
+   "auc": 0.926,
+   "ci": [
+    0.744,
+    1.0
+   ],
+   "clips_copymove_higher": "10/11",
+   "sign_test_p": 0.006
+  },
+  "mahalanobis | edit13 (pair+local)": {
+   "auc": 0.868,
+   "ci": [
+    0.744,
+    0.983
+   ],
+   "clips_copymove_higher": "10/11",
+   "sign_test_p": 0.006
+  },
+  "logistic | edit13 (pair+local)": {
+   "auc": 0.967,
+   "ci": [
+    0.868,
+    1.0
+   ],
+   "clips_copymove_higher": "10/11",
+   "sign_test_p": 0.006
+  },
+  "mahalanobis | local8": {
+   "auc": 0.876,
+   "ci": [
+    0.719,
+    0.992
+   ],
+   "clips_copymove_higher": "10/11",
+   "sign_test_p": 0.006
+  },
+  "logistic | local8": {
+   "auc": 0.967,
+   "ci": [
+    0.851,
+    1.0
+   ],
+   "clips_copymove_higher": "10/11",
+   "sign_test_p": 0.006
+  },
+  "mahalanobis | pair5": {
+   "auc": 0.86,
+   "ci": [
+    0.636,
+    0.992
+   ],
+   "clips_copymove_higher": "8/11",
+   "sign_test_p": 0.113
+  },
+  "logistic | pair5": {
+   "auc": 0.884,
+   "ci": [
+    0.768,
+    1.0
+   ],
+   "clips_copymove_higher": "11/11",
+   "sign_test_p": 0.0
+  }
+ }
+}

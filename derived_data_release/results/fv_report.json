@@ -1,0 +1,70 @@
+{
+ "snapshot_conflict": {
+  "auc": 0.867,
+  "ci": [
+   0.847,
+   0.885
+  ],
+  "per_edit": {
+   "copymove": 0.979,
+   "blur": 0.5,
+   "splice": 0.969,
+   "recolor": 0.999,
+   "dup": 0.886
+  },
+  "tpr10": 0.693,
+  "ctrl_flag": 0.465,
+  "forged_flag": 0.884
+ },
+ "drift_only": {
+  "auc": 0.834,
+  "ci": [
+   0.795,
+   0.866
+  ],
+  "per_edit": {
+   "copymove": 0.877,
+   "blur": 0.486,
+   "splice": 0.897,
+   "recolor": 0.964,
+   "dup": 0.945
+  },
+  "tpr10": 0.66,
+  "ctrl_flag": 0.349,
+  "forged_flag": 0.833
+ },
+ "gbm_orig": {
+  "auc": 0.879,
+  "ci": [
+   0.867,
+   0.891
+  ],
+  "per_edit": {
+   "copymove": 0.982,
+   "blur": 0.505,
+   "splice": 0.97,
+   "recolor": 1.0,
+   "dup": 0.937
+  },
+  "tpr10": 0.764,
+  "ctrl_flag": 0.372,
+  "forged_flag": 0.837
+ },
+ "gbm_ctrl": {
+  "auc": 0.901,
+  "ci": [
+   0.893,
+   0.91
+  ],
+  "per_edit": {
+   "copymove": 1.0,
+   "blur": 0.517,
+   "splice": 0.999,
+   "recolor": 1.0,
+   "dup": 0.989
+  },
+  "tpr10": 0.819,
+  "ctrl_flag": 0.023,
+  "forged_flag": 0.795
+ }
+}

@@ -1,0 +1,46 @@
+{
+ "snapshot_conflict": {
+  "genuine|platform": [
+   0.877,
+   0.789,
+   0.931
+  ],
+  "genuine|naive": [
+   0.836,
+   0.727,
+   0.9
+  ],
+  "simctl|platform": [
+   0.883,
+   0.833,
+   0.923
+  ],
+  "simctl|naive": [
+   0.837,
+   0.766,
+   0.878
+  ]
+ },
+ "drift_only": {
+  "genuine|platform": [
+   0.874,
+   0.8,
+   0.93
+  ],
+  "genuine|naive": [
+   0.943,
+   0.877,
+   0.983
+  ],
+  "simctl|platform": [
+   0.849,
+   0.809,
+   0.888
+  ],
+  "simctl|naive": [
+   0.938,
+   0.897,
+   0.968
+  ]
+ }
+}
