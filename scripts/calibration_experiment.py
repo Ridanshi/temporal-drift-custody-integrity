@@ -20,12 +20,16 @@ DIM = 4
 TRANSFORM_TYPES = ("whatsapp", "youtube")
 
 
-def _attack_instances(delta_mean, joint_mean, coevasion_test, n, seed):
+def _attack_instances(delta_mean, joint_mean, coevasion_test, n, seed, dmask=None, jmask=None):
     deltas, joints = [], []
     for i in range(n):
         s = seed + i
         d = heuristic_coevasion(delta_mean, noise=0.02, seed=s)
         j = adaptive_coevasion(coevasion_test, joint_mean, n_steps=200, seed=s + 1)
+        if dmask is not None:
+            d = np.where(dmask, d, delta_mean)
+        if jmask is not None:
+            j = np.where(jmask, j, joint_mean)
         deltas.append(d)
         joints.append(j)
     return np.array(deltas), np.array(joints)
@@ -48,6 +52,7 @@ def run_calibration_experiment(vision_root: str, n_attack_instances: int = 60, s
         attack_deltas, attack_joints = _attack_instances(
             genuine_deltas.mean(axis=0), joint_samples.mean(axis=0), coevasion_test,
             n_attack_instances, seed=seed + 9000,
+            dmask=genuine_deltas.std(axis=0) > 1e-9, jmask=joint_samples.std(axis=0) > 1e-9,
         )
         n_genuine, n_attack = len(genuine_deltas), len(attack_deltas)
         labels = np.concatenate([np.zeros(n_genuine), np.ones(n_attack)])

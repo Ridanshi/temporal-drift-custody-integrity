@@ -21,6 +21,8 @@ def _generate_tier_instances(
     coevasion_test: CoEvasionTest,
     n_attack_instances: int,
     seed: int,
+    dmask=None,
+    jmask=None,
 ) -> tuple[np.ndarray, np.ndarray]:
     deltas, joints = [], []
     for i in range(n_attack_instances):
@@ -36,6 +38,10 @@ def _generate_tier_instances(
             j = adaptive_coevasion(coevasion_test, joint_mean, n_steps=200, seed=instance_seed + 1)
         else:
             raise ValueError(f"unknown tier: {tier_name}")
+        if dmask is not None:
+            d = np.where(dmask, d, delta_mean)
+        if jmask is not None:
+            j = np.where(jmask, j, joint_mean)
         deltas.append(d)
         joints.append(j)
     return np.array(deltas), np.array(joints)
@@ -104,6 +110,8 @@ def build_held_out_eval_matrix(vision_root: str, n_attack_instances: int = 30, s
                     coevasion_test,
                     n_attack_instances,
                     fold_seed,
+                    dmask=train_deltas_by_type[tt].std(axis=0) > 1e-9,
+                    jmask=train_joint.std(axis=0) > 1e-9,
                 )
 
                 labels = np.concatenate([np.zeros(n_test_genuine), np.ones(n_attack_instances)])

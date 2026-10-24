@@ -1,0 +1,16 @@
+{
+  "whatsapp": {
+    "n_train": 87,
+    "n_test": 59,
+    "raw_minmax_ece": 0.4417,
+    "platt_ece": 0.0461,
+    "isotonic_ece": 0.007
+  },
+  "youtube": {
+    "n_train": 87,
+    "n_test": 59,
+    "raw_minmax_ece": 0.4402,
+    "platt_ece": 0.015,
+    "isotonic_ece": 0.007
+  }
+}

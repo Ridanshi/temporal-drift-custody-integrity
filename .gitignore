@@ -3,3 +3,15 @@ __pycache__/
 .venv/
 *.egg-info/
 data/raw/
+data/
+work/
+paper/
+deck/
+docs/
+case-study/
+*.pkl
+*.npz
+*.bak*
+*.log
+.feature_cache.npz
+.claude/

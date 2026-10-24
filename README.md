@@ -147,3 +147,34 @@ No licence has been specified yet.
 ## Contact
 
 Ridanshi Agarwal, [@Ridanshi](https://github.com/Ridanshi)
+
+## Real-file study (current manuscript)
+
+The tables above come from the first, synthetic-attack version of the study. The current manuscript
+replaces the synthetic attackers with **real forged files**: eight edits applied to decoded frames of
+the VISION clips, re-encoded with real x264 pipelines at three attacker levels (stock, platform-matched
+including the 30-frame GOP, and a white-box search of encoder settings). Where the two disagree, trust
+the manuscript. Its main findings, with device-cluster bootstrap intervals, are in the paper; in short,
+comparing a file with its source carries the detection, unsupervised drift only ties a snapshot
+baseline against platform-aware forgeries, and a supervised classifier is reported as an upper bound.
+
+Code map (all under `scripts/` and `src/custody/`):
+
+| Step | Files |
+|---|---|
+| Forgery and pipelines | `src/custody/forge.py`, `scripts/gen_forgeries.py`, `scripts/gen_adaptive.py`, `scripts/gen_gop_matched.py` |
+| Features | `src/custody/features_v2.py`, `src/custody/local_features.py`, `scripts/extract_*.py` |
+| Detectors | `src/custody/detectors_v2.py`, `scripts/eval_v2.py`, `scripts/classifier_v2.py` |
+| Established-method baselines | `scripts/baselines_established.py`, `scripts/eval_baselines.py` |
+| Degraded source (YouTube copy as source) | `scripts/srcshim.py`, `scripts/degraded_eval.py`, `scripts/run_degraded_chain.sh` |
+| Transfer to unseen devices (FloreView) | `scripts/download_floreview.py`, `scripts/floreview_xfer_gen.py`, `scripts/floreview_xfer_eval.py`, `scripts/floreview_xfer_report.py` |
+| Real-WhatsApp pilot package | `scripts/prepare_whatsapp_pilot.py` |
+
+Data are not in the repository. Download VISION (https://lesc.dinfo.unifi.it/VISION/) into
+`data/vision` and FloreView (https://lesc.dinfo.unifi.it/FloreView/, CC BY-SA 4.0) into
+`data/floreview`; scripts expect those paths and write intermediate files to `work/`. The experiments
+run on CPU with FFmpeg available (the scripts use the one bundled with imageio-ffmpeg).
+Install with `pip install -e .[dev]` and run the tests with `PYTHONPATH=src pytest`.
+
+Known limits: forgeries are simple edits made by us; real platform uploads exist only for the 15 VISION
+devices; the 43-device transfer set uses simulated platform encodes; there is no casework data.

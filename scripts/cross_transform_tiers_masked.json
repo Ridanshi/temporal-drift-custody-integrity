@@ -1,0 +1,14 @@
+{
+  "naive": {
+    "matched_fit_on_youtube_auc": 0.9992248062015504,
+    "cross_fit_whatsapp_scoring_youtube_auc": 0.9988372093023256
+  },
+  "heuristic": {
+    "matched_fit_on_youtube_auc": 0.7348837209302326,
+    "cross_fit_whatsapp_scoring_youtube_auc": 0.7775193798449613
+  },
+  "adaptive": {
+    "matched_fit_on_youtube_auc": 0.0,
+    "cross_fit_whatsapp_scoring_youtube_auc": 0.04031007751937985
+  }
+}

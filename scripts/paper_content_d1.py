@@ -1,0 +1,26 @@
+# -*- coding: utf-8 -*-
+T_FEAT = ("Table 2. Features per file (first 180 frames) and per edge.",
+ ["Group", "Feature", "How it is computed"],
+ [["Declared", "Log bit rate", "container header"], ["Declared", "Log pixel count", "stream header"], ["Declared", "Frame rate", "stream header"],
+  ["Declared", "Codec profile (not in drift vector)", "stream header"],
+  ["Measured", "Log noise-residual std", "median-filter residual, central crop"], ["Measured", "Log residual kurtosis", "same residual"],
+  ["Measured", "Spatial noise inconsistency", "spread of residual std over a 3x4 grid"], ["Measured", "Log 8x8 blockiness", "block-border vs. interior differences"],
+  ["Measured", "DCT high-frequency ratio", "energy share of upper coefficients"], ["Measured", "Log temporal noise", "std of frame differences"],
+  ["Measured", "Log bits per pixel", "packet sizes"], ["Measured", "Log I-to-P packet-size ratio", "packet sizes"],
+  ["Edge", "Mean PSNR", "source vs. target frames"], ["Edge", "PSNR temporal std", "source vs. target frames"],
+  ["Edge", "Error concentration", "worst image cell vs. median cell"], ["Edge", "Error temporal jump", "largest robust jump in log MSE"],
+  ["Edge", "Log fraction of low-PSNR frames", "source vs. target frames"],
+  ["Local", "Error outlier (worst, top-10 mean)", "30-frame windows x 6x8 cells, robust z-score"], ["Local", "Sharpness-change outlier (2)", "Laplacian energy, source vs. target"],
+  ["Local", "Noise-correlation outlier (2)", "residual correlation, source vs. target"], ["Local", "Motion-change outlier (2)", "frame-difference energy, source vs. target"]])
+T_EDIT = ("Table 3. Tamper edits applied to decoded frames 50 to 140 of a native clip.",
+ ["Edit", "Description"],
+ [["Copy-move", "A 22% x 22% patch from the left half is pasted over a region in the right half"],
+  ["Blur", "Gaussian blur (sigma 5) of a 30% x 30% region, as in redaction"],
+  ["Splice", "A 30% x 30% region is replaced by content from another clip of the same device"],
+  ["Recolor", "Gain 1.25 and offset -12 in a 50% x 50% region"],
+  ["Frame freeze", "The first frame of the window is repeated for the whole window"]])
+T_TPR = ("Table 5. True-positive rate at a 10% false-positive rate, by attacker tier.",
+ ["Method", "Naive", "Platform-aware", "Adaptive (vs. full)", "Adaptive (vs. drift)"],
+ [["Snapshot conflict", "0.67", "0.71", "0.68", "0.66"], ["Mismatch-only", "0.85", "0.14", "0.09", "0.09"], ["Drift-only", "0.85", "0.70", "0.57", "0.57"],
+  ["Co-evasion-only", "0.85", "0.10", "0.03", "0.04"], ["Full system", "0.99", "0.62", "0.45", "0.47"],
+  ["Isolation Forest", "0.59", "0.52", "0.47", "0.42"], ["One-Class SVM", "0.59", "0.55", "0.47", "0.45"]])

@@ -1,0 +1,9 @@
+=== 1/8 run_real_data_eval (rebuilds vision cache) ===
+=== 2/8 significance_analysis ===
+=== 3/8 extended_analysis ===
+=== 4/8 run_held_out_eval ===
+=== 5/8 bootstrap_power_analysis ===
+=== 6/8 run_real_tamper_eval (DFD, rebuilds dfd cache) ===
+=== 7/8 run_real_heuristic_eval (Celeb-DF, rebuilds celebdf cache) ===
+=== 8/8 bootstrap_real_tamper_ci ===
+ALL RERUNS COMPLETE
