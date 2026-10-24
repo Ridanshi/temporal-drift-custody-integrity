@@ -178,3 +178,11 @@ Install with `pip install -e .[dev]` and run the tests with `PYTHONPATH=src pyte
 
 Known limits: forgeries are simple edits made by us; real platform uploads exist only for the 15 VISION
 devices; the 43-device transfer set uses simulated platform encodes; there is no casework data.
+
+### Real-WhatsApp pilot (current service)
+
+`scripts/prepare_whatsapp_pilot.py` builds the files to send; `scripts/match_received.py`, `scripts/build_pilot_map.py`,
+`scripts/real_pilot_features.py`, `scripts/real_pilot_transfer.py` and `scripts/real_pilot_eval.py` match the received
+copies to their clips and evaluate them. Finding: models fitted on the VISION copies flag every copy from current
+WhatsApp (854x480, very low bitrate), so detectors must be recalibrated per platform version; recalibrated
+leave-one-clip-out on 11 real clips, a classifier separates the copy-move edit (AUC 0.97, 95% interval 0.87 to 1.00).
